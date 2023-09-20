@@ -1,0 +1,29 @@
+:root,
+::backdrop {
+  --brand-1: #4263eb;
+  --brand-2: #364fc7;
+  --grey-0: #0a0c0d;
+  --grey-1: #212529;
+  --grey-2: #495057;
+  --grey-3: #868e96;
+  --grey-4: #dee2e6;
+  --grey-5: #f8f9fa;
+  --grey-opacity: #21252950;
+  --white: #ffffff;
+  --white-opacity: #ffffff30;
+  --red: #d7443e;
+  --radius-2: 0.125rem;
+  --radius-4: 0.25rem;
+  --percent120: 120%;
+}
+
+html {
+  line-height: 150%;
+  max-width: 100vw;
+  max-height: 100vh;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}

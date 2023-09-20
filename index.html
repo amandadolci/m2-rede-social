@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/publish.css" />
+    <link rel="stylesheet" href="./src/styles/suggestions.css" />
+    <link rel="stylesheet" href="./src/styles/posts.css" />
+    <link rel="stylesheet" href="./src/styles/modal.css" />
+    <link rel="stylesheet" href="./src/styles/desktop.css" />
+
+    <script type="module" src="./src/scripts/index.js" defer></script>
+
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>Criando rede social</title>
+  </head>
+  <body>
+    <header class="header__container">
+      <figure>
+        <img
+          class="header__container--logo"
+          src="./src/assets/img/logo.svg"
+          alt="TechPosters Logo"
+        />
+      </figure>
+      <button class="header__container--button">Sair</button>
+    </header>
+    <main class="main__container">
+      <section class="main__container--1">
+        <section class="publish__container">
+          <!-- <div class="user__container">
+            <figure>
+              <img class="user__container--icon" />
+            </figure>
+            <h2 class="user__container--name"></h2>
+            <small class="user__container--role"></small>
+          </div> -->
+          <input
+            class="publish__container--title"
+            type="text"
+            placeholder="Digitar título do post"
+          />
+          <textarea
+            class="publish__container--article"
+            name="text"
+            id=""
+            wrap="soft"
+            placeholder="Digitar descrição do post"
+          ></textarea>
+          <button class="publish__container--button" type="submit">
+            Postar
+          </button>
+        </section>
+        <aside class="suggestions__container">
+          <h2 class="suggestions__container--title">
+            Sugestões para você seguir
+          </h2>
+          <ul class="suggestions__container--profiles">
+            <li class="suggestions__container--follow">
+              <div class="user__container">
+                <figure>
+                  <img class="user__container--icon" />
+                </figure>
+                <h2 class="user__container--name"></h2>
+                <small class="user__container--role"></small>
+              </div>
+              <button class="follow__container--button"></button>
+            </li>
+          </ul>
+        </aside>
+      </section>
+      <section class="posts__container">
+        <h1 class="posts__container--title">Posts</h1>
+        <ul class="posts__container--list">
+          <!-- <li class="posts__container--card">
+            <div class="user__container">
+            <figure>
+              <img class="user__container--icon" />
+            </figure>
+            <h2 class="user__container--name"></h2>
+            <small class="user__container--role"></small>
+          </div>
+            <h1 class="posts__card--title"></h1>
+            <p class="posts__card--article"></p>
+            <div class="posts__card--interaction">
+              <button class="interaction__container--button"></button>
+              <figure class="interaction__container--like">
+                <span class="material-symbols-rounded"> favorite </span>
+                <small class="interaction__like--count"></small>
+              </figure>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+      <dialog class="modal__controller">
+        <!-- <div class="modal__container">
+          <button class="modal__container--closeButton"></button>
+          <div class="user__container">
+            <figure>
+              <img class="user__container--icon" />
+            </figure>
+            <h2 class="user__container--name"></h2>
+            <small class="user__container--role"></small>
+          </div>
+          <h1 class="posts__card--title"></h1>
+          <p class="posts__card--article"></p>
+        </div> -->
+      </dialog>
+    </main>
+  </body>
+</html>
